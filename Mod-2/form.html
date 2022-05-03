@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tag</title>
+  </head>
+  <body>
+    <form action="./svgAsImage.html" method="get">
+      <pre>
+      <label>UserName: </label> <input
+        type="text"
+        placeholder="Enter Your Username"
+        required
+        name="username"
+      />
+
+      <label for="password">Password: </label> <input
+        type="password"
+        placeholder="Enter Your Password"
+        id="password"
+        name="password"
+        required
+      />
+
+        <label>Gender: </label>  <input type="radio" name="gender" value="male" checked >Male <input type="radio" name="gender" value="female">Female
+
+        <label>Hobbies: </label>
+        <input type="checkbox" value="reading"> Reading
+        <input type="checkbox" value="writing"> Writing
+        <input type="checkbox" value="music"> Music
+        <input type="checkbox" value="coding"> Coding
+        <input type="checkbox" value="content "checked> Content
+
+        Address:
+        <textarea name="address" cols="30" rows="10" required></textarea>
+        DOB:
+        <input type="date" name="dob">
+
+        DOT:
+        <input type="time" name="dot">
+
+        Mobile:
+        <input type="number" name="mobile" required>
+
+        <input type="submit" value="Register">   <input type="reset" value="Clear">
+
+      </pre>
+
+
+
+      <!-- <pre>
+for(i=0i<=10;i++)
+{
+    print("This is Message", i)
+}
+</pre -->
+    </form>
+  </body>
+</html>
