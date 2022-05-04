@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.js"></script>
+  </head>
+  <body ng-app>
+    <div>10 + 25 = {{10+25}}</div>
+    <div>10 + 15 = {{10+15}}</div>
+
+    <pre>
+    <div ng-init="x=10; y=20;">
+        Addition: {{x+y}}
+        Subtraction: {{x-y}}
+
+    </div>
+
+    <div ng-init=" firstname='Pankaj'; lastname='kapoor' ">
+        My FullName - {{firstname + ' ' + lastname}}
+    </div>
+
+    <div ng-init="names = ['John', 'peter', 'manish']">
+
+        <ul>
+            <li ng-repeat="x in names" >{{x}}</li>
+        </ul>
+
+    </div>
+
+    <div ng-init = "firstname='John'">
+        <p>Name:  <input type="text" ng-model="firstname"> </p>
+        <p>Your Wrote: {{firstname}}</p>
+    </div>
+
+
+    </pre>
+  </body>
+</html>

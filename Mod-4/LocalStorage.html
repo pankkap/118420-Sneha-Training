@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <pre>
+    Enter the data you want to store in Local Storage  
+
+    <input type="text" id="inputText">
+
+    <button>Add Data</button>   <button id="remove">Remove Data</button>
+    </pre>
+    <p id="para"></p>
+
+    <script>
+      var x = document.getElementById("inputText");
+      var y = document.querySelector("button");
+      y.onclick = function () {
+        var data = x.value;
+        console.log(data);
+        // Used to set data in the local Storage
+        localStorage.setItem("Info", data);
+
+        // used to recieve data from local storage
+        document.getElementById("para").innerText =
+          localStorage.getItem("Info");
+      };
+
+      var removebtn = document.getElementById("remove");
+      removebtn.onclick = function () {
+        localStorage.removeItem("Info");
+      };
+    </script>
+  </body>
+</html>

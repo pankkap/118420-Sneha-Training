@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Downloaded JQuery -->
+    <script src="./jquery-3.6.0.js"></script>
+
+    <!-- CDN (Content Delivery Network) -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("h1").text("Heading Updated");
+          $("h1").css("color", "red");
+        });
+      });
+    </script>
+
+    <!-- <script>
+      var btn = document.querySelector("button");
+      btn.onclick = function () {
+        document.querySelector("h1").innerText = "Heading Updated";
+      };
+    </script> -->
+  </head>
+  <body>
+    <h1>This is Heading</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, velit!
+      Iusto odio maxime cum nesciunt, et delectus tenetur dolores quas expedita
+      temporibus quo velit excepturi voluptate, incidunt fugit. Perspiciatis,
+      molestias?
+    </p>
+    <button>Click Me</button>
+  </body>
+</html>

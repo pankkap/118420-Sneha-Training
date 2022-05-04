@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var a;
+var b;
+var c;
+a = 10;
+b = "hello";
+c = true;
+console.log(a);
+console.log(b);
+console.log(c);

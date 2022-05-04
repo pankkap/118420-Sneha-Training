@@ -1,0 +1,37 @@
+// Sassy CSS : Its syntax close to css syntax
+
+// Saas is css Preprocessor which allow to create variables, functions, mixin, nesting inside css, which is not possible directly in css. 
+
+
+// we can create variable with help SCSS which is kind of SASS 
+$myColor: #D4C030;
+$fontSize: 40px;
+
+h1
+{
+    color: $myColor;
+    font-size: $fontSize;
+}
+
+
+@mixin myStyle($myColor1) {
+    width: 100px;
+    height: 100px;
+    border: 2px solid $myColor1;    
+}
+
+.box-1
+{
+    @include myStyle(blue)
+}
+.box-2
+{
+    @include myStyle(red);
+    border-radius: 50%;
+}
+.box-3
+{
+    @include myStyle(green);
+    height: 150px;
+    border-radius: 50%;
+}
